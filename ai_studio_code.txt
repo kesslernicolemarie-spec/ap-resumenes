@@ -1,0 +1,25 @@
+┌────────────────────────────────────────────────────────────────────────┐
+│                          UNMdP Resúmenes Web App                       │
+│                                                                        │
+│  ┌──────────────────────┐  ┌────────────────────┐  ┌────────────────┐  │
+│  │   Barra Superior     │  │ Navegación Bottom  │  │ Vista Detalle  │  │
+│  │ (Buscar / Chips / ID)│  │ (Home/Buscar/Subir)│  │  (Visor Hojas) │  │
+│  └──────────┬───────────┘  └─────────┬──────────┘  └────────┬───────┘  │
+│             │                        │                      │          │
+│             ▼                        ▼                      ▼          │
+│  ┌──────────────────────────────────────────────────────────────────┐  │
+│  │                     Capa de Estado y Lógica                      │  │
+│  │   - useAcademicCatalog (Facultades -> Carreras -> Años -> Materias│  │
+│  │   - useSummariesFilter (Ordenamiento por estrellas y búsqueda)   │  │
+│  │   - useFavoritesStore (Persistencia en LocalStorage / IndexedDB)  │  │
+│  │   - useUploadSummary (Validación de PDFs / Imágenes y Metadata)   │  │
+│  └───────────────────────────────────┬──────────────────────────────┘  │
+│                                      │                                 │
+│                                      ▼                                 │
+│  ┌──────────────────────────────────────────────────────────────────┐  │
+│  │                     Despliegue e Infraestructura                 │  │
+│  │   - Repositorio GitHub con control de versiones y ramas          │  │
+│  │   - Vercel CI/CD Build & Preview Environments con dominio HTTPS  │  │
+│  │   - PWA Manifest (ícono, splash y funcionamiento offline)        │  │
+│  └──────────────────────────────────────────────────────────────────┘  │
+└────────────────────────────────────────────────────────────────────────┘

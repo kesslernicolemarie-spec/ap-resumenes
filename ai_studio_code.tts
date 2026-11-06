@@ -1,0 +1,41 @@
+export interface Faculty {
+  id: string;
+  name: string;
+  shortName: string;
+  careers: Career[];
+}
+
+export interface Career {
+  id: string;
+  name: string;
+  totalYears: number;
+}
+
+export interface Subject {
+  id: string;
+  name: string;
+  careerId: string;
+  year: number;
+  topics: string[];
+}
+
+export interface SummaryDocument {
+  id: string;
+  title: string;
+  facultyId: string;
+  careerId: string;
+  subjectId: string;
+  year: number;
+  topic: string;
+  authorName: string;
+  authorLegajo?: string;
+  date: string;
+  rating: number; // 1.0 a 5.0
+  reviewCount: number;
+  fileType: 'pdf' | 'images';
+  pageCount: number;
+  coverUrl: string;
+  pageUrls: string[];
+  downloadUrl: string;
+  fileSizeBytes: number;
+}
